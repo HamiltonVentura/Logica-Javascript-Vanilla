@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Aula dois</title>
+    <script type="text/javaScript" src="dados.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Produtos</a></li>
+            <li><a>Seções</a></li>
+            <li><a>Home</a></li>
+            <li><a>Home</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1>Trilha do Guerreiro</h1>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Adicione seu pokemon</legend>
+            <form  id="formulario">
+                <label style="display: inline;" for="pokemon">adicionar pokemons</label>
+                <input style="display: inline;" type="text" maxlength="20" id="pokemon" name="pokemon">
+                <button type="submit" onclick="formPokemon()">Adicionar</button> 
+            </form>
+        </fieldset>
+    </div>
+    <button onclick="lista()">Lista de Pokemons</button>
+    <div>
+        <h4 id="pokemons"></h4>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <title>mapas</title>
+        <link rel="stylesheet" href="resource.css">
+        <script src="mapas.js"></script>
+    </head>
+
+    
+    <body>
+        <h2>JavaScript Map Objects</h2>
+        <p>Creating a Map from an Array:</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+        // Create a Map
+      const pokemons = new Map([["terra","Zigzagoom"],
+                                ["agual", "Bubassauro"]
+                            ]);
+        
+        document.getElementById("demo").innerHTML = pokemons.get("terra");
+        
+        </script>
+        
+        </body>
+    </html>
+    
+    

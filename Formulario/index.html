@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Cores</title>
+    <script type="text/javaScript" src="exemplo.js"></script>
+</head>
+<body>
+
+    <header></header>
+    <div>
+        <h1>
+            Perguntas e Respostas
+        </h1>
+    </div>
+
+    <section>
+        <h3>Bem vindo ao programa de perguntas e respostas Bíblicas</h3>
+    </section>
+
+    <!--Conceito 1  Funções chamadas externas Onclick-->
+    <button  onclick="substitui()">Start</button>    
+    <section>
+       <h2> <p id="demo"></p></h2>
+    </section>
+    <!--fim conceito 1 -->
+
+    <div id="perguntas" style="visibility: hidden;">
+        <form id="formulario">
+            <div style="display: block;">
+                <fieldset style="display: block;">
+                    <legend><strong>O que significa Mulher em profecia ?</strong></legend>                
+                    <input id="opcao1" name="mulher" type="radio" value="Igreja" >
+                    <label for="opcao1">Igreja</label>
+                    <!-- O name tem que ser o mesmo assim a escolha se torna apenas uma das opções-->
+                    <input id="opcao2" name="mulher" type="radio" value="Pessoas">
+                    <label for="opcao2">Pessoas</label>
+                    
+                    <div id ="mulher-correto" style="visibility: hidden;color: green;"> 
+                        <strong>Parabéns a resposta correta é igreja</strong>
+                    </div>
+                    
+                    <div id="mulher-errado" style="visibility: hidden; color: red;"> 
+                        <Strong>Infelizmente você Errou Procure apocalipse 12</Strong>
+                    </div>
+
+                </fieldset>
+
+                <fieldset style="display: block; ">
+                    <legend><strong>O que significa o chifre pequeno?</strong></legend>
+                    <input id="opcao3" name="chifre" type="radio" value="Roma">
+                    <label for="opcao3">Roma</label>
+                    <!-- O name tem que ser o mesmo assim a escolha se torna apenas uma das opções-->
+                    <input id="opcao4" name="chifre" type="radio" value="Persia">
+                    <label for="opcao4">Persia</label>
+
+                    <input id="opcao5" name="chifre" type="radio" value="Grecia">
+                    <label for="opcao5">Grecia</label>
+
+                    <input id="opcao6" name="chifre" type="radio" value="Europa">
+                    <label for="opcao6">Europa</label>
+
+                    <div id ="chifre-correto" style="visibility: hidden;"> Parabéns a resposta correta é Roma </div>
+                    <div id="chifre-errado" style="visibility: hidden;"> Infelizmente você Errou Procure apocalipse 12</div>
+                </fieldset>
+            </div>
+            <button type="submit" onclick="submeter()" id="botaoForm">Enviar</button>            
+        </form>
+    </div>
+
+    <!--de alguma forma o botão não pode ser inserido dentro do form da algum tipo de conflto-->
+    <button id="refazer" onclick="refazer()" style="visibility: hidden;">Refazer Teste</button>
+
+</body>
+
