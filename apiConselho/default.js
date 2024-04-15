@@ -1,6 +1,6 @@
 
 const apiUrl = 'https://api.adviceslip.com/advice';
-const respsota =document.getElementById("conselhos");
+const respsota = document.getElementById("conselhos");
 
 function apiConselho(){    
     
