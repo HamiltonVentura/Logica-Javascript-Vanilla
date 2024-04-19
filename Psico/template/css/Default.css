@@ -1,0 +1,11 @@
+* {
+    margin: 0
+}
+
+.grupos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
